@@ -16,8 +16,6 @@
 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += device/essential/mata/overlay
-PRODUCT_ENFORCE_RRO_TARGETS := \
-    framework-res
 
 # Properties
 -include device/essential/mata/vendor_prop.mk
@@ -119,8 +117,7 @@ PRODUCT_PACKAGES += \
     android.hardware.camera.provider@2.4-impl \
     android.hardware.camera.provider@2.4-service \
     camera.device@3.2-impl \
-    libxml2 \
-    Snap
+    libxml2
 
 # Dalvik
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -130,10 +127,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
     dalvik.vm.heaptargetutilization=0.75 \
     dalvik.vm.heapminfree=512k \
     dalvik.vm.heapmaxfree=8m
-
-# Device settings
-PRODUCT_PACKAGES += \
-    DeviceSettings
 
 # Display
 PRODUCT_PACKAGES += \
